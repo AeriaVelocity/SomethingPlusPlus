@@ -1,5 +1,5 @@
 something.exe
 something
-keyfile.kfl
+*.keyfile
 .DS_Store
 .vscode/

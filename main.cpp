@@ -11,12 +11,14 @@ int main(int argc, char *argv[])
 {
 	if (argc > 2)
 	{
-		cout << "We don't accept " << argv[2] << "here. Sorry." << endl;
+		cerr << "We don't accept " << argv[2] << "here. Sorry." << endl;
 		return EXIT_FAILURE;
 	}
 	else
 	{
 		string Username;
+		string PasswordField;
+		string CorrectPassword;
 	    if (argc > 1)
 		{
 			Username = argv[1];
@@ -29,15 +31,41 @@ int main(int argc, char *argv[])
 			Username = getlogin();
 			#endif
 		}
-		std::string PasswordField;
 		cout << "Logging into Something++ as " << Username << endl;
-		cout << "Please enter your password: ";
-		getline(cin, PasswordField);
+		string KeyFileName = Username + ".keyfile";
+		ifstream KeyCPassword (KeyFileName);
+		if (KeyCPassword.fail())
+		{
+			string PasswordCreate = "";
+			ofstream KeyFPassword (KeyFileName);
+			cout << "Please enter a password, or leave it blank if you want no password.\n> ";
+			getline(cin, PasswordCreate);
+			if (PasswordCreate == "")
+			{
+				KeyFPassword << "nopassword" << endl;
+			}
+			else
+			{
+				KeyFPassword << PasswordCreate << endl;
+			}
+		}
+		else
+		{
+			getline(KeyCPassword, CorrectPassword);
+			KeyCPassword.close();
+		}
+		if (CorrectPassword == "nopassword")
+		{
+			PasswordField = CorrectPassword;
+		}
+		else
+		{
+			cout << "Please enter your password\n> ";
+			getline(cin, PasswordField);
+		}
 		if (PasswordField == CorrectPassword)
 		{
-			cout << "Welcome, " << Username << "! Creating key file..." << endl;
-			string KeyFileName = Username + ".keyfile";
-			ofstream KeyFile (KeyFileName);
+			cout << "Welcome, " << Username << "!" << endl;
 			cout << "Enter a command!\n";
 			string Command = "";
 			int LoginFun = 0;
@@ -106,17 +134,13 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-			if (PasswordField[0] == '*')
+			if (PasswordField == "your password")
 			{
-				cout << "NO NO NO NO NO\n";
-			}
-			else if (PasswordField == "your password")
-			{
-				cout << "Very funny.\n";
+				cerr << "Very funny.\n";
 			}
 			else
 			{
-				cout << "That's not obfuscated enough.\n";
+				cerr << "NO NO NO NO NO\n";
 			}
 		}
 	}
