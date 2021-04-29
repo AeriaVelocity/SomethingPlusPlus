@@ -1,1 +1,1 @@
-g++ -Wall main.cpp
+g++ -Wall main.cpp -o something
