@@ -34,6 +34,7 @@ Nope. None. No deps. Just `g++` with a standard `gcc` installation.
 If you REALLY want to use this shell that doesn't even work as a shell as your default shell:
 
 ```
+echo /path/to/something >> /etc/shells
 chsh -s /path/to/something
 ```
 
