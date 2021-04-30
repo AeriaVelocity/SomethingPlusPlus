@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		else
 		{
 			#ifdef _WIN32
-			Username = "mike-rosoft"
+			Username = "mike-rosoft";
 			#else
 			Username = getlogin();
 			#endif
