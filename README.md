@@ -3,11 +3,11 @@ Something++ is a satirical command line shell for macOS, GNU/Linux, BSD and what
 
 ### Usability? What usability? We're onto SOMETHING now, and we're going to INCREMENT!
 
-## Quick start
+## How the flip to use it
 
 If you understand how other shells work, you should be far from home with this shell! Commands like `cd` and `ls` don't do as expected!
 
-## Getting Something++
+## How the flip to get it
 
 Just `git clone` or download and extract the repo and compile it using the built in shell script `build.sh`.
 
@@ -15,13 +15,13 @@ Just `git clone` or download and extract the repo and compile it using the built
 
 You need `g++` to build it, but that's about it.
 
-### Windows
+### Michaelsoft Binbows
 
 On Windows, you should either install MinGW or compile Something++ in WSL. (WSL is preferred since it can actually be set as a shell)
 
 If compiling with MinGW, run `build.bat` rather than `build.sh`.
 
-## Running Something++
+## How the flip to start it
 
 If you've installed it, type `something`. If not, and you're still in the build directory, type `./something`.
 
@@ -29,7 +29,7 @@ If you've installed it, type `something`. If not, and you're still in the build 
 
 Nope. None. No deps. Just `g++` with a standard `gcc` installation.
 
-### Switching to Something++
+## How the flip to use it FOREVER
 
 If you REALLY want to use this shell that doesn't even work as a shell as your default shell:
 
