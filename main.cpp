@@ -31,7 +31,14 @@ int main(int argc, char *argv[])
 			Username = getlogin();
 			#endif
 		}
-		cout << "Logging into Something++ as " << Username << endl;
+		cout << "Logging into Something++ as " << Username;
+		#ifdef _WIN32
+		cout << " on Michaelsoft Binbows";
+		#endif
+		#ifdef __APPLE__
+		cout << " on Appilitosh Oh Ess Eks";
+		#endif
+		cout << endl;
 		string KeyFileName = Username + ".keyfile";
 		ifstream KeyCPassword (KeyFileName);
 		if (KeyCPassword.fail())
