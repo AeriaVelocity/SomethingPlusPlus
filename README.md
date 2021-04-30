@@ -1,4 +1,4 @@
-# Something++
+# ![Something++](https://raw.githubusercontent.com/That1M8Head/SomethingPlusPlus/main/something-plusplus-logo-smol.png) Something++
 Something++ is a satirical command line shell for macOS, GNU/Linux, BSD and whatever other OSes I missed out. Something++ includes amazing features such as a password system, and the ability to make the user say "What am I doing with my life?".
 
 ### Usability? What usability? We're onto SOMETHING now, and we're going to INCREMENT!
