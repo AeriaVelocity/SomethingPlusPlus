@@ -15,7 +15,7 @@ Just `git clone` or download and extract the repo and compile it using the built
 
 You need `g++` to build it, but that's about it.
 
-### Michaelsoft Binbows ![Binbows](https://raw.githubusercontent.com/That1M8Head/SomethingPlusPlus/main/binbows.png)
+### Michaelsoft Binbows ![Binbows](https://raw.githubusercontent.com/That1M8Head/SomethingPlusPlus/main/michaelsoft.png)
 
 On Windows, you should either install MinGW or compile Something++ in WSL. (WSL is preferred since it can actually be set as a shell)
 
