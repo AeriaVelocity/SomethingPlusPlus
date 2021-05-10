@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		string CorrectPassword;
 	    if (argc > 1)
 		{
-			Username = str(argv[1]);
+			Username = string(argv[1]);
 		}
 		else
 		{
