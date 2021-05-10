@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
 		#endif
 		#ifdef __APPLE__
 		cout << " on Appilitosh Oh Ess Eks";
+		cout << "\n(unless you're on macOS 11 or later, in which case, my bad)"
 		#endif
 		cout << endl;
 		string KeyFileName = Username + ".keyfile";
