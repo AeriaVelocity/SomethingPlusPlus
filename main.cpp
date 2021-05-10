@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cstdlib>
 #ifndef _WIN32
 #include <unistd.h>
 #include <sys/types.h> 
