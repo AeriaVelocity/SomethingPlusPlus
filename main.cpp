@@ -138,6 +138,18 @@ int main(int argc, char *argv[])
 				{
 					cout << "meow\n" << endl;
 				}
+				else if (Command == "neko")
+				{
+					cout << "nya\n" << endl;
+				}
+				else if (Command == "dog")
+				{
+					cout << "woof\n" << endl;
+				}
+				else if (Command == "inu")
+				{
+					cout << "wan\n" << endl;
+				}
 				else
 				{
 					cout << Command << " doesn't exist. Type it again, maybe something'll happen!" << endl;
