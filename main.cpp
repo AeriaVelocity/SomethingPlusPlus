@@ -124,13 +124,17 @@ int main(int argc, char *argv[])
 					string HelpVar;
 					cout << "Welcome to help. Press Enter to continue.";
 					getline(cin, HelpVar);
-					cout << "\nThank you for using help. Press Enter to exit.";
+					cout << "Thank you for using help. Press Enter to exit.";
 					getline(cin, HelpVar);
 					cout << endl;
 				}
 				else if (Command == "run")
 				{
 					cout << "There is nowhere you can run.\n" << endl;
+				}
+				else if (Command == "cat")
+				{
+					cout << "meow\n" << endl;
 				}
 				else
 				{
