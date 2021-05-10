@@ -150,6 +150,15 @@ int main(int argc, char *argv[])
 				{
 					cout << "wan\n" << endl;
 				}
+				else if (Command == "suicide")
+				{
+					#ifdef _WIN32
+					cout << "Unable to kill something.exe.\n" << endl;
+					#else
+					cout << "Unable to kill something.\n" << endl;
+					#endif
+					cout << "The driver DPRSSD.DLL was not found." << endl;
+				}
 				else
 				{
 					cout << Command << " doesn't exist. Type it again, maybe something'll happen!" << endl;
