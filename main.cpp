@@ -119,14 +119,14 @@ int main(int argc, char *argv[])
 				} 
 				else if (Command == "bye")
 				{
-					cout << "Okay, see you!" << endl;
+					cout << "Okay, see you!\n" << endl;
 				}
 				else if (Command == "help")
 				{
 					string HelpVar;
 					cout << "Welcome to help. Press Enter to continue.";
 					getline(cin, HelpVar);
-					cout << "Thank you for using help. Press Enter to exit.";
+					cout << "Thank you for using help. Press Enter to exit.\n";
 					getline(cin, HelpVar);
 					cout << endl;
 				}
@@ -153,15 +153,15 @@ int main(int argc, char *argv[])
 				else if (Command == "suicide")
 				{
 					#ifdef _WIN32
-					cout << "Unable to kill something.exe.\n" << endl;
+					cout << "Unable to kill something.exe." << endl;
 					#else
-					cout << "Unable to kill something.\n" << endl;
+					cout << "Unable to kill something." << endl;
 					#endif
-					cout << "The driver DPRSSD.DLL was not found." << endl;
+					cout << "The driver DPRSSD.DLL was not found.\n" << endl;
 				}
 				else
 				{
-					cout << Command << " doesn't exist. Type it again, maybe something'll happen!" << endl;
+					cout << Command << " doesn't exist. Type it again, maybe something'll happen!\n" << endl;
 				}
 			}
 			return 0;
