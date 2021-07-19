@@ -29,12 +29,22 @@ If you've installed it, type `something`. If not, and you're still in the build 
 
 Nope. None. No deps. Just `g++` with a standard `gcc` installation.
 
-## How the flip to use it FOREVER
+## How the flip to set it as default
 
-If you REALLY want to use this shell that doesn't even work as a shell as your default shell:
+Don't. Just don't.
+
+### I make poor life decisions
+
+Add `something` to `/etc/shells`.
 
 ```
 echo /path/to/something >> /etc/shells
+```
+
+#### :warning: WARNING: VERY BAD STUPID IDIOT IDEA :warning:
+Then set it as your default shell.
+
+```
 chsh -s /path/to/something
 ```
 
@@ -42,5 +52,5 @@ If you followed exact instructions earlier, then `/path/to/something` is `/usr/l
 
 Then log out and log in again.
 
-I take no responsibility for anything that goes wrong when using Something++.
+I take no responsibility for anything that goes wrong when using Something++. Your fault is your fault.
 
